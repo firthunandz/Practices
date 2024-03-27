@@ -1,0 +1,163 @@
+/* COLOR PALETTE */
+:root {
+  --black: #000000;
+  --dark-grey: #2b2d42;
+  --grey: #8d99ae;
+  --light-grey: #edf2f4;
+  --light-red: #ef233c;
+  --red: #d90429;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  background-color: #709acd;
+}
+
+.container {
+  padding: 1.5rem 1rem 1rem 1rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  gap: .5rem;
+  border-radius: 1rem;
+  border: solid .3rem var(--black);
+  background-color: var(--dark-grey);
+}
+
+.display {
+  grid-column: 1/5;
+  border-radius: .4rem;
+  border-color: var(--black);
+  background-color: var(--grey);
+  font-size: 2.5rem;
+  margin-bottom: 1.2rem;
+  text-align: right;
+  padding-right: .5rem;
+  padding-left: .5rem;
+}
+
+button {
+  border-radius: .3rem;
+  background-color: var(--grey);
+  min-width: 3.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--light-grey);
+}
+
+#delete {
+  grid-column: 1;
+  grid-row: 2;
+  background-color: var(--light-red);
+  border-color: var(--red);
+}
+
+#parentesis {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+#porcentaje {
+  grid-column: 3;
+  grid-row: 2;
+}
+
+#division {
+  grid-column: 4;
+  grid-row: 2;
+}
+
+#multiplicacion {
+  grid-column: 4;
+  grid-row: 3;
+}
+
+#resta {
+  grid-column: 4;
+  grid-row: 4;
+}
+
+#suma {
+  grid-column: 4;
+  grid-row: 5;
+}
+
+#igual {
+  grid-column: 4;
+  grid-row: 6;
+}
+
+#punto {
+  grid-column: 2;
+  grid-row: 6;
+}
+
+#borrar {
+  grid-column: 3;
+  grid-row: 6;
+}
+
+#cero {
+  grid-column: 1;
+  grid-row: 6;
+}
+
+#one {
+  grid-column: 1;
+  grid-row: 5;
+}
+
+#two {
+  grid-column: 2;
+  grid-row: 5;
+}
+
+#three {
+  grid-column: 3;
+  grid-row: 5;
+}
+
+#four {
+  grid-column: 1;
+  grid-row: 4;
+}
+
+#five {
+  grid-column: 2;
+  grid-row: 4;
+}
+
+#six {
+  grid-column: 3;
+  grid-row: 4;
+}
+
+#seven {
+  grid-column: 1;
+  grid-row: 3;
+}
+
+#eight {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+#nine {
+  grid-column: 3;
+  grid-row: 3;
+}
