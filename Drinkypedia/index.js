@@ -1,8 +1,8 @@
 const express = require('express');
 const mongoose = require('mongoose');
 require('dotenv').config();
-const Product = require('./models/drink.model');
-const drinkRoutes = require('./routes/drink.routes')
+const Product = require('./src/models/drink.model');
+const drinkRoutes = require('./src/routes/drink.routes')
 
 const app = express();
 const port = process.env.DP_PORT;
